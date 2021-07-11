@@ -1,0 +1,4 @@
+p =re.compile('(a(b(cd(efgh(i)))))j') # 이것도 compile이 필요하구나. => match 위해서
+maaaa =p.match('abcdefghij') # 매치할 원 문자열을 매치함수 안에 인자로그대로 넣네.
+print(maaaa.group(1)) # 가장 바깥에서부터 () 껍질을 까면서 들어가는 거구나.
+print(maaaa.group(5))
